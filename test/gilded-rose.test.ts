@@ -97,7 +97,7 @@ describe("Item Entrada al backstage", () => {
 })
 
 describe("Item Conjured", () => { 
-  it("Comprueba que, una vez caducado, la calidad de un item normal, la calidad se reduce 4 cada día y la fecha de venta se reduce en 1", function () {        
+  it("Comprueba que, una vez caducado, la calidad se reduce 4 cada día y la fecha de venta se reduce en 1", function () {        
     const items = transformItem([new Item("Conjured Mana Cake", 0, 10)],2)
     expect(items[0].quality).toEqual(2);
     expect(items[0].sellIn).toEqual(-2);
